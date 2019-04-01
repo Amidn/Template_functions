@@ -13,19 +13,42 @@ Model  = os.path.join(DIR,Model_source)
 
 min_En = 0.3e3
 max_En = 100e3
-region = 'R_TEST' # "A1" # 'R_TEST' # "E" ,  "F"
+region = 'F' # "A" # 'R_TEST' # "E" ,  "F", "B"
 
 # ======================================
-if region == "R_TEST":
-    maxl=  120.  #
-    minl=  0.0   #
-    
-    maxb=  30.   # 190.5
-    minb= -30.   # 170.5
 
-if region == "A1":
-    maxl=  15.  #
+
+if region == "A":
+    maxl=  20.  #
     minl=  10.   #
+    
+    maxb=  5.   # 190.5
+    minb= -5.   # 170.5
+
+if region == "B":
+    maxl=  34.5  #
+    minl=  20.   #
+    
+    maxb=  5.   # 190.5
+    minb= -5.   # 170.5
+
+if region == "C":
+    maxl=  43.  #
+    minl=  34.5   #
+    
+    maxb=  5.   # 190.5
+    minb= -5.   # 170.5
+
+if region == "D":
+    maxl=  56.  #
+    minl=  43.   #
+    
+    maxb=  5.   # 190.5
+    minb= -5.   # 170.5
+
+if region == "E":
+    maxl=  64.  # 488.5
+    minl=  56.   # 472.5
     
     maxb=  5.   # 190.5
     minb= -5.   # 170.5
@@ -37,12 +60,22 @@ if region == "F":
     maxb=  5.   # 190.5
     minb= -5.   # 170.5
 
-if region == "E":
-    maxl=  64.  # 488.5
-    minl=  56.   # 472.5
-
+if region == "G":
+    maxl=  85.  #
+    minl=  73.   #
+    
     maxb=  5.   # 190.5
     minb= -5.   # 170.5
+
+
+
+
+if region == "R_TEST":
+    maxl=  120.  #
+    minl=  0.0   #
+    
+    maxb=  30.   # 190.5
+    minb= -30.   # 170.5
 
 interv_l = round(maxl - minl)
 interv_b = round(maxb - minb)

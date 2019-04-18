@@ -13,9 +13,15 @@ Model  = os.path.join(DIR,Model_source)
 
 min_En = 0.3e3
 max_En = 100e3
-region = 'F' # "A" # 'R_TEST' # "E" ,  "F", "B"
+region = 'GP' # "A" # 'R_TEST' # "E" ,  "F", "B"
 
 # ======================================
+if region == "GP":
+    maxl=  85.  #
+    minl=  10.   #
+    
+    maxb=  5.   # 190.5
+    minb= -5.   # 170.5
 
 
 if region == "A":
